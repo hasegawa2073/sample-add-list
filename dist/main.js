@@ -1,4 +1,4 @@
-import { AddList } from './modules/AddList.js';
+import { AddList } from './modules/AddList/AddList.js';
 document.addEventListener('DOMContentLoaded', () => {
     AddList();
 });

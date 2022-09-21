@@ -1,3 +1,5 @@
+import { FocusList } from '../FocusList/FocusList.js';
+
 export const AddList = () => {
   const todoUl = document.querySelector<HTMLUListElement>('.todo__ul');
   const addButton = document.querySelector<HTMLButtonElement>('.add__button');
@@ -9,5 +11,6 @@ export const AddList = () => {
   `;
   addButton?.addEventListener('click', (e: MouseEvent) => {
     todoUl?.insertAdjacentHTML('beforeend', todoLiHtml);
+    FocusList();
   });
 };
