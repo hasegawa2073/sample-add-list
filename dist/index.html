@@ -15,12 +15,16 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <main>
+    <main class="main">
       <section class="todo">
         <ul class="todo__ul" aria-live="assertive" aria-atomic="false">
           <li class="todo__li" aria-label="Todoリスト">
             <button class="todo__button" aria-label="Todoの完了ボタン"></button>
-            <p class="todo__text">図書館に本を返す</p>
+            <p class="todo__text" contenteditable="true">図書館に本を返す</p>
+          </li>
+          <li class="todo__li" aria-label="Todoリスト">
+            <button class="todo__button" aria-label="Todoの完了ボタン"></button>
+            <p class="todo__text" contenteditable="true">散歩する</p>
           </li>
         </ul>
       </section>
